@@ -23,6 +23,7 @@ media_source = <?php echo $_COOKIE['media_source'] ?><br>
 
 if (!isset($_GET['user_id'])) die;
     
+define('IS_DEVELOPMENT', false);
 require 'mongodb_helper.php';
 
 $db = get_mongodb();
